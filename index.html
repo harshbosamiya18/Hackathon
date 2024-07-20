@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Pricing Model</h1>
+        <form id="pricingForm">
+            <label for="demand">Demand:</label>
+            <input type="number" id="demand" required>
+
+            <label for="competitionPrice">Competition Price:</label>
+            <input type="number" id="competitionPrice" required>
+
+            <label for="seasonality">Seasonality:</label>
+            <select id="seasonality">
+                <option value="1">Low</option>
+                <option value="2">High</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
